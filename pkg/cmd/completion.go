@@ -9,7 +9,7 @@ import (
 var (
 	completionCmd = &cobra.Command{
 		Use:                   "completion [bash|zsh|fish|powershell]",
-		Short:                 "Generate completion script",
+		Short:                 "Generate completion script.",
 		DisableFlagsInUseLine: true,
 		ValidArgs:             []string{"bash", "zsh", "fish", "powershell"},
 		Args:                  cobra.ExactValidArgs(1),

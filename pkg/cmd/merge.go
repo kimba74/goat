@@ -11,7 +11,7 @@ import (
 var (
 	mergeCmd = &cobra.Command{
 		Use:   "merge [file]...",
-		Short: "Merge the content of multiple files into one",
+		Short: "Merge the content of multiple YAML and/or JSON files into one.",
 		Args:  cobra.MinimumNArgs(2),
 		Run: func(cmd *cobra.Command, args []string) {
 			// Parse the values of the provided files

@@ -10,8 +10,8 @@ import (
 
 var (
 	convertCmd = &cobra.Command{
-		Use:   "convert [file]",
-		Short: "Convert the content of a file to another format",
+		Use:   "convert file",
+		Short: "Convert files between YAML and JSON format.",
 		Args:  cobra.ExactArgs(1),
 		Run: func(cmd *cobra.Command, args []string) {
 			// Decode the values of the provided files

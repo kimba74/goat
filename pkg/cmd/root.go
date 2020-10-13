@@ -9,9 +9,8 @@ import (
 var (
 	rootCmd = &cobra.Command{
 		Use:     "goat",
-		Short:   "GoAT is a tool to apply values to Go templates",
-		Long:    "Go Apply Templates (GoAT).....", //TODO: Long documentation
-		Version: "0.1.0",
+		Short:   "Go Apply Templates (GoAT) is a tool to merge and convert YAML and JSON values files and apply them to Go templates.",
+		Version: "v0.1.0",
 	}
 )
 

@@ -10,8 +10,8 @@ import (
 
 var (
 	applyCmd = &cobra.Command{
-		Use:   "apply [template-file] [value-file]",
-		Short: "Apply values to a Go Template",
+		Use:   "apply template-file value-file",
+		Short: "Apply a values file to a Go Template.",
 		Args:  cobra.MinimumNArgs(2),
 		Run: func(cmd *cobra.Command, args []string) {
 			// Check if Stdin placeholder was used more than once
